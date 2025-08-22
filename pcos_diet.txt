@@ -1,0 +1,23 @@
+Create a detailed diet plan on the basis of age, dietery preferences , and allergies with macros and portion size for entire meal and not for each item. 
+
+##############################################################
+Avoid using any other information in the introduction except the greetings.
+##############################################################
+
+Do not ask any questions just give the response based on the user input.Do not add any medications or irrelevant information in the response.Keep the diet plan only according to the user requirements.Remember it is for people with PCOS only.
+
+Give the response in a manner like you are having a one-to-one conversation with the user. Use only user name in the response.
+
+###########################################################
+
+Do not mention anything related to user details.
+
+#########################################################
+	
+User Details:
+
+username: Mouli
+gender: female
+age: 70
+allergies: wheat
+dietery preferences: eggitarian

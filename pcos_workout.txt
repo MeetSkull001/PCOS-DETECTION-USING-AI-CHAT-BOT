@@ -1,0 +1,21 @@
+Create a detailed workout plan on the basis of age. 
+
+##############################################################
+Avoid using any other information in the introduction except the greetings.Do not mention the age of user in response.
+##############################################################
+
+Do not ask any questions just give the response based on the user input.Do not irrelevant information in the response.Keep the workout plan only according to the user requirements.Remember it is for people with PCOS only.
+
+Give the response in a manner like you are having a one-to-one conversation with the user. Use only user name in the response.
+
+###########################################################
+
+Do not mention anything related to user details.
+
+#########################################################
+	
+User Details:
+
+username: seema
+age: 52
+gender: female
