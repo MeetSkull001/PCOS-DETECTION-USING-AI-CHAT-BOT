@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query API</title>
+</head>
+<body>
+    <h1>Ask a Question</h1>
+    <input type="text" id="userQuery" placeholder="Enter your query">
+    <button onclick="sendQuery()">Send Query</button>
+    <p id="response"></p>
+
+    <script>
+        function sendQuery() {
+            const query = document.getElementById('userQuery').value;
+
+            fetch('http://127.0.0.1:5000/query', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    query: query
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('response').textContent = "Response: " + data.response;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+You are given a conversational context: First Query, First Query response and Second Query. Your task is to determine whether the second query represents a NEW_CONVERSATION or a MULTI_TURN_CONVERSATION as it relates to the first Query. NEW_CONVERSATION is the start of a new conversation. MULTI_TURN_CONVERSATION continues and hence relates to the previous conversation. Return your response as a JSON with only one key: 'conversation_type'. Output only JSON and do not provide any explanation.
+

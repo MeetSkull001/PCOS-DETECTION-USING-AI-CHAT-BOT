@@ -1,0 +1,30 @@
+[
+    {
+        "CATEGORY": "PCOS",
+        "PROMPT": "prompts/pcos.txt"
+    },
+    {
+        "CATEGORY": "PCOS_CURE",
+        "PROMPT": "prompts/pcos.txt"
+    },
+    {
+        "CATEGORY": "PCOS_HOME_REMEDIES",
+        "PROMPT": "prompts/pcos_remedies.txt"
+    },
+    {
+        "CATEGORY": "PCOS_LIFESTYLE_CHANGES",
+        "PROMPT": "prompts/pcos.txt"
+    },
+    {
+        "CATEGORY": "PCOS_DIET_PLANS",
+        "PROMPT": "prompts/pcos_diet.txt"
+    },
+    {
+        "CATEGORY": "PCOS_WORKOUT_PLANS",
+        "PROMPT": "prompts/pcos_workout.txt"
+    },
+    {
+        "CATEGORY": "OUT_OF_BOUND",
+        "PROMPT": "prompts/pcos.txt"
+    }
+]
