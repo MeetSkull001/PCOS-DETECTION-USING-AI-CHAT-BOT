@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="body1">
+            <h1 class="chat-head">What can I help you with?</h1>
+
+            <!-- Chat messages container -->
+            <div id="chat-container" class="chat-container">
+                <!-- Messages will be appended here dynamically -->
+            </div>
+
+            <!-- User input and send button -->
+            <div class="message">
+                <input type="text" placeholder="Ask your question..." class="message-input" id="userQuery">
+                <img src="send.png" alt="Send Icon" class="send-icon" onclick="sendMessage()">
+            </div>
+
+            <div class="container">
+                <div class="box">
+                    <p>PCOS detection</p>
+                    <img src="detection.png" alt="Detection">
+                </div>
+                <div class="box">
+                    <p>Symptom Tracker</p>
+                    <img src="detection1.png" alt="Detection">
+                </div>
+                <div class="box">
+                    <p>Daily Planner</p>
+                    <img class="img2" src="detection2.png" alt="Detection">
+                </div>
+            </div>
+            <p class="footer">Start your PCOS wellness journey today</p>
+        </div>
+    </div>
+
+    <script>
+       function sendMessage() {
+    const inputField = document.querySelector('.message-input');
+    const message = inputField.value;
+
+    if (message) {
+        // Clear the chat container
+        const chatContainer = document.getElementById('chat-container');
+        chatContainer.innerHTML = ""; // Removes all existing queries and responses
+
+        // Disable input and send button
+        inputField.disabled = true;
+        document.querySelector('.send-icon').disabled = true;
+
+        // Hide the heading and the boxes
+        document.querySelector('.chat-head').style.display = 'none';
+        document.querySelector('.container').style.display = 'none';
+
+        // Create a new message container for the user's query
+        const userMessage = document.createElement('div');
+        userMessage.classList.add('message-container', 'user-message');
+        userMessage.innerHTML = `<div class="message user-query">${message}</div>`;
+        chatContainer.appendChild(userMessage);
+
+        // Show the loading dots
+        const loader = document.createElement('div');
+        loader.id = "loader";
+        loader.classList.add('loader');
+        loader.innerHTML = '<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>';
+        chatContainer.appendChild(loader);
+
+        // Send the message to the bot
+        fetch('http://127.0.0.1:5000/query', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                query: message
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Hide the loader
+            loader.remove();
+
+            // Create the response container for the bot's reply
+            const botResponse = document.createElement('div');
+            botResponse.classList.add('message-container', 'bot-response');
+            botResponse.innerHTML = `<div class="message bot-reply">${data.response}</div>`;
+            chatContainer.appendChild(botResponse);
+
+            // Scroll the chat container to the bottom
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            // Re-enable input and send button
+            inputField.disabled = false;
+            document.querySelector('.send-icon').disabled = false;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            loader.remove(); // Hide the loader in case of an error
+            inputField.disabled = false;
+            document.querySelector('.send-icon').disabled = false;
+        });
+
+        // Clear the input field after sending
+        inputField.value = "";
+    }
+}
+
+    </script>
+</body>
+</html>

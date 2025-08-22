@@ -1,0 +1,530 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D9D9D9;
+}
+
+.main{
+    background-color: #D6CADD;
+    border-bottom-left-radius: 10vw; 
+    height:75vh;
+    width: 100%; 
+    max-width: 100%; 
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 100%; 
+}
+
+.header a {
+    margin-right: 1.5vw;
+    color: #60535A;
+    font-family: sans-serif;
+    margin-top: 2%;
+}
+
+.button {
+    margin-right: 2%;
+    margin-top: 2%;
+    color: #60535A;
+    font-family: sans-serif;
+    height: 5vh;
+    width: 8vw;
+    cursor: pointer;
+    background-color: #AC99B7;
+    border-radius: 30px;
+}
+
+.button p {
+    margin-top: 4.5%;
+    color: #60535A;
+    font-family: sans-serif;
+    margin-left: 4.5%;
+}
+
+h1{
+    color: black;
+    font-size: 10vh;
+    font-family: sans-serif;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+p{
+    color: #60535A;
+    font-family: sans-serif;
+    margin-left: 7%;
+    margin-top: 8.5%; 
+    font-size: 16px;
+    margin-bottom: 0; 
+}
+
+.button1{
+    margin-top: 3%;
+    color: #60535A;
+    font-family: sans-serif;
+    height: 5vh;
+    width: 10vw;
+    background-color: #AC99B7;
+    border-radius: 30px;
+    margin-left: 7%;
+    cursor: pointer;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.button1 p {
+    color: #60535A;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.img1{
+    height: 90vh;
+    width:50vw;
+    margin-top: 0%;
+    margin-bottom: 12%;
+}
+
+.main2{
+    display: flex;
+    height: 20vh;
+}
+
+/*Services*/
+
+.services {
+    background-color: #D6CADD;
+    height: 65vh;
+    width: 60vw;
+    border-radius: 30px;
+    margin-left: 20%;
+    margin-top: 10%;
+    padding-top: 20px;
+}
+
+.head {
+    color: #60535A;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 8%;
+}
+
+.services p {
+    margin-top: 2%;
+    margin-left: 10%;
+    font-size: 18px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.circle {
+    background-color: #B9A8C3;
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+}
+
+.sub-head {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #60535A;
+    font-weight: normal;
+    margin-top: 1vw; 
+    margin-left: 0.3vw;
+}
+
+.service-content p {
+    font-size: 12px;
+    color: #60535A;
+    margin-left: 0.3vw;
+    margin-top: 0 !important;
+}
+
+.options {
+    height: 18vh;
+    width: 8vw;
+    margin-bottom: 20%; /* Adjust as needed */
+    display: flex; /* Optional: if you want to align internal content */
+    justify-content: center; /* Center align content within options */
+    align-items: center; /* Center vertically */
+}
+
+/*why us*/
+
+.about-section {
+    margin-top: 10%;
+}
+
+.content {
+    margin-left: 5%;
+    padding: 0%;
+    width: 50%;
+}
+
+.head2 {
+    color: #60535A;
+    font-family: sans-serif;
+    font-size: 35px;
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 8%;
+}
+
+.sub {
+    color: #564C4C;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: 0px;
+    margin-bottom: 10px; /* Reduce bottom margin to tighten space */
+}
+
+.about-section p {
+    font-size: 15px;
+    color: #60535A;
+    font-family: sans-serif;
+    margin-left: 10%;
+    margin-top: 0; /* Remove additional top margin */
+    padding-top: 5px; /* Add a small padding to create subtle space */
+}
+
+.read {
+    height: 4vh;
+    width: 5.8vw;
+    background-color: #AC99B7;
+    color: #564C4C;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-size: 12px;
+    display: inline-block; /* Make the button inline with the paragraph */
+    margin-top: 0px; /* Add some margin on top to create space between text and button */
+    justify-content: center;
+    align-items: center;
+    margin-left: 18%;
+    cursor: pointer;
+}
+
+.read p {
+    margin-left: 7%;
+    font-size: 12px;
+}
+
+
+
+.us {
+    height: 65vh;
+    width: 45vw;
+    margin-left: 2%;
+    margin-right: 6%;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/*banner*/
+
+.banner img {
+    height: 60vh;
+    width: 60vw;
+    margin-left: 20%;
+    margin-top: 6%;
+}
+
+/*FAQ*/
+
+.faq-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.head3 {
+    color: #60535A;
+    font-family: sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left: 1%;
+}
+
+.ques-content {
+    cursor: pointer;
+    background-color: #AC99B7;
+    padding: 15px;
+    color: #564C4C;
+    border: 1px solid #ddd;
+    margin-top: 40px;
+    font-size: 35px;
+    text-align: left;
+}
+
+
+.question {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.answer {
+    display: none; /* Hidden by default */
+    border-left: 3px solid #564C4C;
+    background-color: #D6CADD;
+    color: #60535A;
+    height: 10vh;
+    padding: 15px; /* Optional: add padding for better spacing */
+}
+
+
+
+/* Show the answer when the question is clicked */
+.ques-content.active + .answer {
+    display: block;
+}
+
+
+/*newsletter*/
+.newsletter {
+    margin-top: 7%;
+    width: 100%;
+    height: 50vh;
+    background-color: #D6CADD;
+}
+
+.head4 {
+    color: #60535A;
+    font-family: sans-serif;
+    font-size: 35px;
+    margin-left: 20%;
+    padding-top: 50px;
+}
+
+.email {
+    width: 60vw;
+    height: 6vh;
+    border-radius: 6px;
+    border: 1px solid #564C4C;
+    background-color: #D6CADD;
+    margin-left: 20%;
+    margin-top: 0%;
+    padding: 4px;
+}
+
+.sub-btn {
+    background-color: #AC99B7;
+    color: #60535A;
+    border: none;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-left: 45%;
+}
+
+.sub-btn:hover {
+    border: 1px solid #60535A;
+}
+
+.email:hover {
+    border: 1px solid #60535A;
+}
+
+
+/* Chatbot-specific styles */
+body{
+    overflow-y: scroll;
+}
+.chatbot-container {
+    background-color: #B9A8C3; /* Background specific to the chatbot window */
+    width: 100%;
+    height: 100vh; /* Full height of the screen for the chatbot section */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.body1 {
+    width: 80%; /* Adjust width as needed */
+    padding: 20px;
+}
+
+h1.chat-head {
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Chat messages container */
+.chat-container {
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.message {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #D6CADD;
+    opacity: 0.5;
+    border: 0.5px solid black;
+    border-radius: 20px;
+    height: auto;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.user-query {
+    opacity: 0.5;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-left: 900px;
+    margin-bottom: 10px;
+}
+
+.bot-reply {
+    background-color: #D6CADD;
+    color: #000;
+    opacity: 0.5;
+    border: none;
+    margin-bottom: 10px;
+    width: 65%;
+}
+
+/* Message input field and send button */
+.message-input {
+    width: 80%; /* Adjust as needed */
+    border: none; /* Remove default border */
+    padding: 10px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #D6CADD;
+    opacity: 0.5;
+    font-size: 20px; /* Increase font size */
+    margin-right: 10px; /* Space between input and icon */
+    margin-left: 20px;
+}
+
+.message-input:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+.send-icon {
+    cursor: pointer; /* Change cursor to pointer */
+    height: 40px; /* Adjust size as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-left: 100px;
+}
+
+/* Footer and box styles remain unchanged */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 4px;
+    border: 0.5px solid black;
+    border-radius: 12px;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.box img {
+    height: 100px;
+    margin-left: 3px;
+}
+
+.img2 {
+    height: 0.2vh;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 15px;
+    text-align: center;
+    color: #564C4C;
+    margin: 0;
+}
+
+.footer {
+    text-align: center;
+    color: #564C4C;
+    margin-top: 50px;
+    font-weight: lighter;
+    margin-left: 20px;
+}
+
+
+/* Loader styling */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #000;
+    gap: 5px;
+}
+
+.dot {
+    opacity: 0;
+    animation: blink 1s infinite;
+}
+
+.dot:nth-child(1) { animation-delay: 0s; }
+.dot:nth-child(2) { animation-delay: 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
